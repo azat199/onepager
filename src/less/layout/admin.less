@@ -1,0 +1,73 @@
+#Admin {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template:
+        "Nav Nav"    8vh
+        "Side Main"   auto
+        / 20vw 80vw;
+}
+
+nav {
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(42, 42, 42);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    grid-area: Nav;
+    display: flex;
+    flex-direction: row;
+    // display: flex;
+    // display: grid;
+    // grid-template:
+    //     "Logomain  Navtop";
+    // grid-template-columns: 210px  auto;
+    // grid-template-rows: 84px;
+}
+
+nav a, a:visited, a:hover, a:active {
+    // color: inherit;
+    text-decoration: none;
+}
+nav>ul>li:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+nav>ul>li {
+    font-size: 1.5em;
+}
+
+.navlist {
+    height: 100%;
+    width: 100%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#NavLogo {
+    margin: 10px;
+}
+
+#A {
+    grid-area: Side;
+    border: solid;
+    border-width: 10px;
+    border-color: rgb(0, 0, 0);
+    background: rgb(61, 61, 61);
+}
+
+#container1 {
+    padding: 20px;
+    grid-area: Main;
+}

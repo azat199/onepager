@@ -1,0 +1,104 @@
+
+.footer>div a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+.footer>div>ul>li:hover {
+color: rgb(167, 167, 167);
+background-color: rgb(0, 0, 0);
+}
+
+.footer>div>ul>li {
+    list-style: none;
+    font-size: 1em;
+}
+
+.footer {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: grid;
+    grid-template:
+        ". FAME Legal FAQ Languages"
+        / 1fr 3fr 3fr 3fr 1fr
+}
+
+#Footer-FAME {
+    grid-area: FAME;
+}
+
+#Footer-Legal {
+    grid-area: Legal;
+}
+
+#Footer-FAQ {
+    grid-area: FAQ;
+}
+
+.footer-item {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    display: grid;
+    grid-template:
+        "Footer-Category"
+        "Footer-List"
+        / 100%
+}
+
+.footer-category {
+    background-color: rgb(0, 0, 0)
+}
+
+
+#Languages {
+    margin: 0;
+    padding: 5vh 0;
+    height: 20vh;
+    width: 100%;
+    grid-area: Languages;
+    display: flex;
+    display: grid;
+    grid-template:
+        "Activelanguage" 8vh
+        "Languagelist" 12vh
+        / 1fr
+}
+
+#Activelang {
+    border: none;
+    grid-area: Activelanguage;
+}
+
+
+#Langlist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    grid-area: Languagelist;
+    display: flex;
+    display: grid;
+    grid-template:
+        "Language1" 4vh
+        "Language2" 4vh
+        "Language3" 4vh
+        / 1fr
+}
+
+#Lang1 {
+    grid-area: Language1;
+
+}
+
+#Lang2 {
+    grid-area: Language2;
+
+}
+
+#Lang3 {
+    grid-area: Language3;
+
+}
