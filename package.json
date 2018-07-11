@@ -11,7 +11,7 @@
     "build": "webpack --mode production"
   },
   "repository": {
-    "type": "git",
+    "type": "git"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.1.0",
